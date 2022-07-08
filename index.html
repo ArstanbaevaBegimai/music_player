@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+  <body>
+    <div class="music-container">
+      <div class="img-container">
+        <img src="./images/Moda.jpg" alt="moda" id="cover" />
+      </div>
+      <div class="music-info">
+        <h4 id="title"></h4>
+      </div>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="progress-time" id="time"></span>
+      <audio src="./music/Moda.mp3" id="audio"></audio>
+
+      <div class="navigation">
+        <button class="action-btn" id="prev">
+          <img src="./images/prev.svg" alt="prev" />
+        </button>
+        <button class="action-btn action-btn-big" id="play">
+          <img src="./images/play.svg" alt="play" />
+        </button>
+        <button class="action-btn" id="next">
+          <img src="./images/next.svg" alt="next" />
+        </button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
